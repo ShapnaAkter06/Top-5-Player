@@ -40,7 +40,7 @@ header p{
     text-transform: uppercase;
     font-weight: 500;
 }
-.table, .budget{
+.table, .budget, input{
     background-color: black;
 }
 .select-player{
@@ -49,5 +49,4 @@ header p{
 }
 #total{
     color: #FF5E19;
-    font-size: 22px;
 }
