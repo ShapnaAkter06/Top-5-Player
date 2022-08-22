@@ -40,12 +40,21 @@ header p{
     text-transform: uppercase;
     font-weight: 500;
 }
-.table, .budget, input{
+.budget, input{
     background-color: black;
+    color: #cccccc;
 }
 .select-player{
     padding-right: 0;
     padding-left: 0;
+    height: 300px;
+    background-color: black;
+    margin-bottom: 40px;
+    color: #ffffff;
+}
+ul li{
+    list-style: none;
+    padding: 10px;
 }
 #total{
     color: #FF5E19;

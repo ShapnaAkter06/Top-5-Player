@@ -1,22 +1,23 @@
-// Set the player name
+// Select Player
+
 const playerArray = [];
 
 function display(players){
     if(players.length > 5){
-        alert('You can not select more than five');
+        alert('Sorry!! You can not select player more than five');
         return;
     }
-    const tableBody = document.getElementById('players-name');
-    tableBody.innerHTML = '';
+    const playerList = document.getElementById('players-name');
+    playerList.innerHTML = '';
 
     for (let i = 0; i < players.length; i++){
         const name = playerArray[i].playerName;
-        const tr = document.createElement('tr');
-        tr.innerHTML = `
-        <th>${i + 1}</th>
+        const li = document.createElement('li');
+        li.innerHTML = `
+        <th>${i + 1}.</th>
         <td>${name}</td>
         `;
-        tableBody.appendChild(tr)
+        playerList.appendChild(li)
     }
 }
 function getTopFive(element){
@@ -29,6 +30,5 @@ function getTopFive(element){
         playerName : playerName
     }
     playerArray.push(playerObj);
-    // document.getElementById('total-added-player').innerText = playerArray.length;
     display(playerArray)
 }
