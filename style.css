@@ -1,0 +1,53 @@
+body{
+    background-color: #212529;
+}
+.hero-image{
+    background-image: url(./img/background.png);
+    background-size: cover;
+    background-position: center;
+}
+header{
+    position: relative;
+    background-color: black;
+}
+header h1{
+    color: #FF5E19;
+    font-size: 40px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+header p{
+    color: #ffffff;
+    text-align: center;
+    font-size: 20px;
+}
+.ball{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.row{
+    --bs-gutter-x : 0;
+}
+.card{
+    background-color: black;
+}
+.card h5{
+    font-size: 18px;
+}
+.btn{
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.table, .budget{
+    background-color: black;
+}
+.select-player{
+    padding-right: 0;
+    padding-left: 0;
+}
+#total{
+    color: #FF5E19;
+    font-size: 22px;
+}
