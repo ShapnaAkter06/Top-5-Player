@@ -52,10 +52,6 @@ header p{
     margin-bottom: 40px;
     color: #ffffff;
 }
-ul li{
-    list-style: none;
-    padding: 10px;
-}
 #total{
     color: #FF5E19;
 }

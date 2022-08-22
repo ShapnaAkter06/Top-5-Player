@@ -18,14 +18,14 @@
     <!-- Hero section starts -->
     <header>
         <div class="row align-items-center">
-            <div class="col-lg-3 hero-image">
+            <div class="col-lg-3 col-sm-4 hero-image">
                 <img src="./img/hero.png" alt="" class="img-fluid">
             </div>
-        <div class="col-lg-6">
+        <div class="col-lg-6 col-sm-4">
             <h1 class="text-orange-600 font-bold mb-4">Top 5 Best Football Players in the World</h1>
             <p>Football is a family of team sports that involve, to varying degrees, kicking a ball to score a goal</p>
         </div>
-        <div class="col-lg-3">
+        <div class="col-lg-3 col-sm-4">
             <img src="./img/hero2.png" alt="" class="img-fluid">
             <img src="./img/ball.png" alt="" class="img-fluid ball">
         </div>
@@ -36,8 +36,8 @@
         <section>
             <div class="container">
                 <div class="row py-5">
-                    <div class="col-lg-8">
-                        <div class="row row-cols-4 gap-5">
+                    <div class="col-lg-8 col-sm-12">
+                        <div class="row row-cols-lg-4 row-cols-sm-12 gap-5">
                             <!-- Player-1 -->
                             <div class="card border shadow-lg h-100 text-center text-white">
                                 <img src="./img/1.png" alt="" class="img-fluid">
@@ -106,18 +106,12 @@
                               </div>
                         </div>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-lg-4 col-sm-12">
                       <div class="row">
                         <!-- select players -->
                             <div class="select-player border">
                               <h2 class="text-white text-center pt-3 fs-4 fw-bold">Selected-V</h2>
-                              <ul id="players-name" class="px-4 py-2">
-                                  <li></li>
-                                  <li></li>
-                                  <li></li>
-                                  <li></li>
-                                  <li></li>
-                              </ul>
+                              <ol id="players-name" class="px-4 py-2"></ol>
                             </div>
                 <!-- Budget -->
               <div class="budget text-white p-3 border">
@@ -145,8 +139,8 @@
                         <button class="btn btn-primary" id="total-calculate-btn">Calculate Total</button>
                     </div>
                     <div class="d-flex justify-content-between">
-                      <span>Total:</span>
-                      <span id="total">$00</span>
+                      <span class="fs-4">Total:</span>
+                      <span class="fs-4" id="total">$00</span>
                     </div>
               </div>
                     </div>
