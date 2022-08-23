@@ -1,31 +1,24 @@
-// Select Player
-
 const playerArray = [];
-
-function display(players){
-    if(players.length > 5){
-        alert('Sorry!! You can not select player more than five');
-        return;
-    }
-    const playerList = document.getElementById('players-name');
-    playerList.innerHTML = '';
-
-    for (let i = 0; i < players.length; i++){
-        const name = playerArray[i].playerName;
-        const li = document.createElement('li');
-        li.innerHTML = name;
-        playerList.appendChild(li)
-    }
-}
 function getTopFive(element){
-    element.disabled = true;
-    element.style.background = 'gray';
-    element.style.border = 'white';
-    const playerName = element.parentNode.parentNode.children[0].innerText;
+
+    if(playerArray.length < 5){
     
-    const playerObj = {
-        playerName : playerName
+        const playerName = element.parentNode.parentNode.children[0].innerText;
+        playerArray.push(playerName);
+
+        const playerList = document.getElementById('player-list');
+        const li = document.createElement('li');
+
+        for(let i = 0; i < playerArray.length; i++){
+        li.innerText = `${playerArray[i]}`
+        }
+        playerList.appendChild(li)
+
+        element.disabled = 'true';
+        element.style.background = 'gray';
+        element.style.border = 'white';
     }
-    playerArray.push(playerObj);
-    display(playerArray)
+    else{
+        alert('Sorry!! You can not add player more than five')
+    }
 }
